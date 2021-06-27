@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Inner Page - iPortfolio Bootstrap Template</title>
+  <title>Portfolio Details - iPortfolio Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -46,7 +46,7 @@
 
       <div class="profile">
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Matheus Andrade</a></h1>
+        <h1 class="text-light"><a href="index.html">Alex Smith</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
           <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -72,27 +72,68 @@
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <section class="breadcrumbs">
+    <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Inner Page</h2>
+          <h2>Portfoio Details</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Inner Page</li>
+            <li>Portfoio Details</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <section class="inner-page">
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
       <div class="container">
-        <p>
-          Example inner page template
-        </p>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper-container">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/p1_f1.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/p1_f2.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/p1_f3.jpg" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Data Science Project, classification problem</li>
+                <li><strong>Project date</strong>: 15 June, 2021</li>
+                <li><strong>Project</strong>: <a href="portfolio-TalkingData-AdTracking-Code.html">Code here</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Description</h2>
+              <p>
+                In summary, the goal is to build a machine learning model to determine whether a click for mobile app ads is fraudulent or not. It is used R Language for the construction of this project. <br> For more information, please visit problem's page on <a href="https://www.kaggle.com/c/talkingdata-adtracking-fraud-detection/overview" target="_[whatever]">Kaggle</a> to see the overview.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
       </div>
-    </section>
+    </section><!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->
 

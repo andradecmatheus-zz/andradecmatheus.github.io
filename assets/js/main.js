@@ -188,11 +188,20 @@
 
   });
 
-  /**
+    /**
    * Initiate portfolio lightbox 
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
+  });
+
+  /**
+   * Initiate portfolio details lightbox 
+   */
+  const portfolioDetailsLightbox = GLightbox({
+    selector: '.portfolio-details-lightbox',
+    width: '90%',
+    height: '90vh'
   });
 
   /**
@@ -213,9 +222,9 @@
   });
 
   /**
-   * Testimonials slider
+   * Services slider
    */
-  new Swiper('.testimonials-slider', {
+  new Swiper('.services-slider', {
     speed: 600,
     loop: true,
     autoplay: {
@@ -253,4 +262,6 @@
     })
   });
 
+
 })()
+

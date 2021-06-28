@@ -601,7 +601,7 @@ rm(df_original, df_IsAttributed0, df_IsAttributed1, df_subsets, df_aux, ip,
 <h1>2. Feature Engineering Function</h1>
 <div id="data-munging" class="section level2">
 <h2>Data munging</h2>
-<p>Now that the data is knew let’s automatize its processing and transformations - aux = 0 means for modelling - aux = 1 means for submitting</p>
+<p>Now that the data is knew let’s automatize its processing and transformations (aux = 0 stands for modelling; aux = 1 stands for submitting)</p>
 <pre class="r"><code>featureEngineering &lt;- function(data=df[], aux = aux){
   
   # the same manipulate made in EDA stage
@@ -1212,7 +1212,7 @@ roc.curve(under_test$is_attributed, pred_model_underRF, plotit = T, col = 1)</co
 </div>
 </div>
 <div id="file-submission-on-kaggle" class="section level1">
-<h1>4.File Submission on Kaggle</h1>
+<h1>4. File Submission on Kaggle</h1>
 <pre class="r"><code>## loading &quot;test&quot; kaggle dataset
 #submit &lt;- fread(file.choose(), header=T)
 submit &lt;- fread(&quot;../Datasets/test.csv&quot;, header=T)
@@ -1231,13 +1231,15 @@ p &lt;- predict(chosenModel, submit1)
 ## generating the dataframe that will be submited 
 d &lt;- data.frame(click_id = submit$click_id, is_attributed = p)
 fwrite(d, &quot;submit_op_under_rf.csv&quot;)</code></pre>
-<p>Finally, the scores AUC metric in Kaggle by this model was: - Private Score: 0.87182~0.87193 - Public Score: 0.87675~0.87668</p>
+<p>Finally, the scores AUC metric in Kaggle by this model was:</p>
+<ul>
+<li><p>Private Score: 0.87182~0.87193</p></li>
+<li><p>Public Score: 0.87675~0.87668</p></li>
+</ul>
 </div>
 <div id="get-in-touch-with-me" class="section level1">
 <h1>Get in touch with me</h1>
-<div id="if-you-have-any-questions-suggestions-or-just-want-to-exchange-an-idea-about-this-project-dont-hesitate-to-get-in-touch-with-me" class="section level2">
-<h2>If you have any questions, suggestions or just want to exchange an idea about this project, don’t hesitate to get in touch with me!</h2>
-</div>
+<p>If you have any questions, suggestions or just want to exchange an idea about this project, don’t hesitate to get in touch with me!</p>
 </div>
 
 
